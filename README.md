@@ -19,7 +19,7 @@ Install using your favorite package manager:
 ### [lazy.nvim](https://github.com/folke/lazy.nvim)
 ```lua
 {
-  "your-github-username/islands-dark.nvim",
+  "hrbtk/islands-dark.nvim",
   lazy = false,
   priority = 1000,
   config = function()
@@ -31,7 +31,7 @@ Install using your favorite package manager:
 ### [packer.nvim](https://github.com/wbthomason/packer.nvim)
 ```lua
 use {
-  'your-github-username/islands-dark.nvim',
+  'hrbtk/islands-dark.nvim',
   config = function()
     vim.cmd("colorscheme islands_dark")
   end
@@ -40,7 +40,7 @@ use {
 
 ### [vim-plug](https://github.com/junegunn/vim-plug)
 ```vim
-Plug 'your-github-username/islands-dark.nvim'
+Plug 'hrbtk/islands-dark.nvim'
 " In your init.vim or init.lua after loading plugins:
 colorscheme islands_dark
 ```
