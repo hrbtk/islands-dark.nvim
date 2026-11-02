@@ -2,7 +2,7 @@
 
 A clean, dark Neovim colorscheme based on the IntelliJ IDEA "Islands Dark" theme. Built in Lua with zero dependencies.
 
-![Islands Dark Preview](link-to-your-screenshot-here.png)
+![Islands Dark Preview](assets/preview.png)
 
 ## Features
 
@@ -16,6 +16,12 @@ A clean, dark Neovim colorscheme based on the IntelliJ IDEA "Islands Dark" theme
 
 Install using your favorite package manager:
 
+### Native (`vim.pack`)
+```bash
+vim.pack.add({ "https://github.com/hrbtk/islands-dark.nvim" })
+vim.cmd.colorscheme("islands_dark")
+```
+
 ### [lazy.nvim](https://github.com/folke/lazy.nvim)
 ```lua
 {
@@ -28,26 +34,3 @@ Install using your favorite package manager:
 }
 ```
 
-### [packer.nvim](https://github.com/wbthomason/packer.nvim)
-```lua
-use {
-  'hrbtk/islands-dark.nvim',
-  config = function()
-    vim.cmd("colorscheme islands_dark")
-  end
-}
-```
-
-### [vim-plug](https://github.com/junegunn/vim-plug)
-```vim
-Plug 'hrbtk/islands-dark.nvim'
-" In your init.vim or init.lua after loading plugins:
-colorscheme islands_dark
-```
-
-### Native (`vim.pack`)
-Clone the repository into your pack directory:
-```bash
-vim.pack.add({ "https://github.com/hrbtk/islands-dark.nvim" })
-vim.cmd.colorscheme("islands_dark")
-```
